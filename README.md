@@ -3,5 +3,5 @@ An unconfident boss and his mistrees, interesting！
 
 ## CV evaluation method
 
-[AP & mAP](cv_evaluation/AP & mAP.md)
+[AP & mAP](cv_evaluation/AP&mAP.md)
 
