@@ -20,9 +20,7 @@
   | iou < 0.5 with all gt | FP                                        | FN                                          |
 
 
-$$
-precision = \frac{TP}{TP + FP}
-$$
+$$precision = \frac{TP}{TP + FP}$$
 
 $$
 recall = \frac{TP}{TP + FN}
