@@ -12,7 +12,7 @@
 
 - 计算方法
 
-  <img src="C:\Users\86188\AppData\Roaming\Typora\typora-user-images\image-20210917145934251.png" alt="image-20210917145934251" style="zoom:67%;" />
+  <img src="image-20210917145934251.png" alt="image-20210917145934251" style="zoom:67%;" />
   
   |                       | 检测框的置信度大于阈值t（模型检测为物体） | 检测框的置信度小于阈值t（模型检测不是物体） |
   | --------------------- | ----------------------------------------- | ------------------------------------------- |
@@ -40,11 +40,11 @@ $$
 
     - 计算precision和recall
 
-      <img src="C:\Users\86188\AppData\Roaming\Typora\typora-user-images\image-20210917152220222.png" alt="image-20210917152220222" style="zoom: 80%;" />
+      <img src="image-20210917152220222.png" alt="image-20210917152220222" style="zoom: 80%;" />
 
   -	以recall为横轴，precision为纵轴，可以获得PR曲线，precision和recall负相关，局部区域会上下波动
 
-  <img src="C:\Users\86188\AppData\Roaming\Typora\typora-user-images\image-20210917152955521.png" alt="image-20210917152955521" style="zoom:80%;" />
+  <img src="image-20210917152955521.png" alt="image-20210917152955521" style="zoom:80%;" />
   
 - AP（average precision），平均精准度，对pr曲线上的precision求平均，一个积分求和 ==>面积求和取平均：
   $$
@@ -55,9 +55,8 @@ $$
   P_{smooth}(r) = \max\limits_{r^`>r}P(r^`)
   $$
   
-
-  <img src="C:\Users\86188\AppData\Roaming\Typora\typora-user-images\image-20210917170040071.png" alt="image-20210917170040071" style="zoom:80%;" />
-
+<img src="image-20210917170040071.png" alt="image-20210917170040071" style="zoom:80%;" />
+  
 - Interplolated AP(pascal voc 2008的AP计算方法)
 
   IoU=0.5，平滑的PR曲线上，取横轴0-1的10等分点（包括断点共11个点）的Precision的值，计算其平均值为最终AP的值。
@@ -68,7 +67,7 @@ $$
 
   绘制出平滑后的PR曲线后，用积分的方式计算平滑曲线下方的面积作为最终的AP值。
 
-  <img src="C:\Users\86188\AppData\Roaming\Typora\typora-user-images\image-20210917170833470.png" alt="image-20210917170833470" style="zoom:80%;" />
+  <img src="image-20210917170833470.png" alt="image-20210917170833470" style="zoom:80%;" />
 
 - CoCo mAP
 
